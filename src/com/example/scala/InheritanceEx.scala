@@ -1,10 +1,10 @@
 package com.example.scala
 
-class PointOne(val xc: Int, val yc: Int){
-  var x: Int = xc;
-  var y: Int = yc;
+class PointOne(val xc:Int, val yc:Int){
+  var x:Int = xc;
+  var y:Int = yc;
   
-  def move(xd: Int, yd: Int){
+  def move(xd:Int, yd:Int){
    x = x + xd;
    y = y+ yd;
    println ("Point x location : " + x);
@@ -12,8 +12,7 @@ class PointOne(val xc: Int, val yc: Int){
   }
 }
 
-class Location(override val xc: Int, override val yc: Int,
-   val zc :Int) extends PointOne(xc, yc){
+class Location(override val xc:Int, override val yc:Int, val zc:Int) extends PointOne(xc, yc){
    var z: Int = zc
 
    def move(dx: Int, dy: Int, dz: Int) {
